@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p> Node with Embla </p>
+
+<h3>Weather</h3>
+<table>
+    <tr>
+        <td>Title</td>
+        <td>Distance</td>
+        <td>Lattitude</td>
+    </tr>
+    <% weatherList.forEach(function(item){ %>
+    <tr>
+        <td><%= item.title %></td>
+        <td><%= item.distance %></td>
+        <td><%= item.latt_long %></td>
+    </tr>
+    <% }) %>
+</table>
+
+</body>
+</html>
